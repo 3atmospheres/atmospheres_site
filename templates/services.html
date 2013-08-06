@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block title %}Services{% endblock %}
+
+{% block body_class %}services{% endblock %}
+
+{% block content %}
+	<div id="content-header">
+        <h2>Our services</h2>
+    </div>
+    <div id="content-services">
+        <div class="float-1">
+            <img src="{{ MEDIA_URL }}img/Terminal.png" alt="Web Development"><br>
+            <h5>Web Development</h5>
+            We create clean, efficient, standards compliant web applications with Python and Django.  Our experiences range from simple static sites for small businesses to complex social networking sites.
+        </div>
+        <div class="float-1">
+            <img src="{{ MEDIA_URL }}img/Tools.png" alt="Sys Admin"><br>
+            <h5>System Administration</h5>
+            We can setup and support Linux servers whether it be on premise or in the cloud.  We can be your end-to-end solution and get your site up as quickly as possible.
+        </div>
+        <div class="float-1 last">
+            <img src="{{ MEDIA_URL }}img/Help.png" alt="Consulting"><br>
+            <h5>Advice and Consulting</h5>
+            We have a wide range of experience working with small businesses to corporate clients.  Everyone has a solution that is right for them.  We can help with your overall strategy from user research to recommending a technology stack that fits your needs.
+        </div>
+
+        <div class="float-2">
+            <br><br><br>
+            <span>To find out more about our services and rates, please <a href="{% url contact %}">contact us</a> and we'll get back to you on the <b>same business day</b>.</span>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block title %}Contact{% endblock %}
+
+{% block body_class %}contact{% endblock %}
+
+{% block content %}
+	<div id="content-header">
+        <h2>Thanks for contacting us!</h2>
+        <h4>You can expect a response from us within the day.</h4>
+
+        <h5>In the meantime, you can find out what we're up to on Twitter.</h5>
+        <a href="http://twitter.com/3atmospheres/"><img src="{{ MEDIA_URL }}img/twitter_bird.png" alt="Twitter Bird" /></a>
+        <h5 class="tweet"><a href="http://twitter.com/3atmospheres/">@3atmospheres</a></h5>
+    </div>
+{% endblock %}
